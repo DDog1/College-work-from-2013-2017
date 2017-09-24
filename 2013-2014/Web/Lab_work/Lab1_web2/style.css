@@ -1,0 +1,27 @@
+/*Question 1*/
+table#collapsed{
+	border-collapse: collapse;
+	border-spacing: 15px 3px;
+	border: none;
+}
+
+/*Question 6*/
+tr.green{
+	background-color:#74DF00;
+	color:white;
+}
+tr.gray{
+	background-color:#BDBDBD;
+}
+
+table#style{
+	border-collapse: collapse;
+	border-spacing: 15px 3px;
+	border: none;
+	border-color:#74DF00; 
+}
+
+/*affects all*/
+table, td, th{
+	border:1px solid black;
+}

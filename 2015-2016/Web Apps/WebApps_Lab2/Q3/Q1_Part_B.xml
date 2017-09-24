@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<booking>
+<departingTicket>
+	<name>Friend one</name>
+	<departingLocation>Dublin</departingLocation>
+	<departingTime>March 4th 12:15pm</departingTime>
+	<destination>Rome</destination>
+	<arrivalTime>15:25pm</arrivalTime>
+	<holidayLenght>one week</holidayLenght>
+</departingTicket>
+
+<departingTicket>
+	<name>Friend two</name>
+	<departingLocation>Dublin</departingLocation>
+	<departingTime>March 4th 12:15pm</departingTime>
+	<destination>Rome</destination>
+	<arrivalTime>15:25pm</arrivalTime>
+	<holidayLenght>one week</holidayLenght>
+</departingTicket>
+
+<returnTicket>
+	<name>Friend one</name>
+	<departingLocation>Rome</departingLocation>
+	<departingTime>March 11th 16:05pm</departingTime>
+	<destination>Dublin</destination>
+	<arrivalTime>17:20pm</arrivalTime>
+	<holidayLenght>one week</holidayLenght>
+</returnTicket>
+
+<returnTicket>
+	<name>Friend two</name>
+	<departingLocation>Rome</departingLocation>
+	<departingTime>March 11th 16:05pm</departingTime>
+	<destination>Dublin</destination>
+	<arrivalTime>17:20pm</arrivalTime>
+	<holidayLenght>one week</holidayLenght>
+</returnTicket>
+
+<stayingIn>
+	<hotelName>Radisson Hotel</hotelName>
+	<numberOfPeopleInRoom>two</numberOfPeopleInRoom>
+	<duration>7 nights</duration>
+	<roomNum>6th floor room 12</roomNum>
+</stayingIn>
+</booking>

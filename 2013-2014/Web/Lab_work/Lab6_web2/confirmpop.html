@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Confirm pop</title>
+	<style> @import ".css";</style>
+
+	<!--Javascript for the stars function-->
+
+	<script type="text/javascript">
+		function stars()
+		{
+			var okayChosen = confirm("Do you want to hear the good news");
+
+			if(okayChosen == true)
+			{
+				alert('Monday is your lucky day');
+			}
+
+			else
+			{
+				alert('As you wish');
+			}
+		}
+
+	</script>
+
+</head>
+
+<body>
+
+<a href="#" onclick="stars()">Read your stars</a>
+
+</body>
+</html>

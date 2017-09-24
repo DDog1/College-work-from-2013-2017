@@ -1,0 +1,20 @@
+/*Style rules for the table*/
+table, td, th{
+	border-collapse: collapse;
+	padding:4px;
+	text-align: center;
+	margin-left: 206px;
+	margin-bottom: 10px;
+}
+/*Style rules for the th*/
+th{
+	border:2px solid blue;
+	background-color: #E8DECA;
+	color:red;
+}
+/*Style rules for the td*/
+td{
+	border:2px solid red;
+	background-color: LightGray;
+	color:blue;
+}

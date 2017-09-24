@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>inner HTML</title>
+	<style> @import ".css";</style>
+
+	<!--Javascript for the welcome function-->
+
+	<script type="text/javascript">
+		function change()
+		{
+// Change text to other text
+
+	document.getElementById("one").innerHTML = "HEY! MESSAGE ONE HAS CHANGED";
+
+// Change text to red
+
+	document.getElementById("two").innerHTML = "<span style='color:red;'>MESSAGE TWO IS IN RED FONT NOW</span>";
+
+
+
+// NAME
+	var userInput  =   document.getElementById("userInput").value;
+	document.getElementById("three").innerHTML = "Welcome " + userInput;
+
+// AGE
+
+   var age  =   document.getElementById("age").value;
+
+   document.getElementById("four").innerHTML = "You are  " + age + " years old";		}
+
+	</script>
+
+</head>
+
+<body>
+<p id="one">Hey</p>
+<p id="two">I'm going to change</p>
+<p id = "three">Welcome to the site</p>
+<p id = "four">Please enter in your name and age below</p>
+
+NAME
+<input type="text" id="userInput">
+<br>
+AGE
+<input type="number" id="age">
+<br>
+
+<input type='button' onclick="change()" value='Click'>
+
+</body>
+</html>

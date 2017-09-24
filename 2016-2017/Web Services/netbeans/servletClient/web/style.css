@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-Feb-2017, 19:42:50
+    Author     : darren
+*/
+
+@CHARSET "ISO-8859-1";
+table{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+}
+
+th{
+    color: black;
+}
+td{
+    color: black;
+}
+
+table,td,th {
+    border: .1rem solid green;
+    padding: .1rem;
+    background-color: white;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+    /*padding-left: 10px;
+    padding-right: 10px;*/
+}
+a:hover {
+    text-decoration: none;
+    color: #FFFF03;
+    background-color: #3A3A3A;
+    /*padding-left: 10px;
+    padding-right: 10px;*/
+}
+span{
+    color: blue;
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 50px;
+    width: 90%;
+    text-align: center;
+    animation: colorChange 10s infinite;
+    animation-direction: alternate;
+}
+@keyframes colorChange{
+    0% {left: 0px; color: red;}
+    25% {left: 50px; color: blue;}
+    50% {left: 100px; color: red;}
+    75% {left: 150px; color: blue;}
+    100% {left: 200px; color: red;}
+    /*0% {color: red; width: 300px;}
+    50% {color: blue; width: 100px;}
+    100% {color: red; width: 300px;}*/
+}

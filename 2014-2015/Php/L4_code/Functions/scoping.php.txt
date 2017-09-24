@@ -1,0 +1,36 @@
+<html>
+<head><title>Variable scoping in PHP</title></head>
+<body>
+<h1>Variable scoping in PHP</h1>
+
+Variable scoping is pretty simple in PHP
+
+<?php
+// Define a global variable
+
+$a = 123;
+echo "<p>Value of global \$a is $a</p>";
+test1();
+test2();
+
+
+// A function that uses the global
+// must declare it as global
+
+function test1()
+{
+   global $a;
+   echo "<p>Value of global \$a inside test1 is $a</p>";
+}
+
+// A function using a local var
+
+function test2()
+{
+   $a = 456;
+   echo "<p>Value of local \$a inside test2 is $a</p>";
+}
+
+?>
+</body>
+</html>

@@ -1,0 +1,36 @@
+nav a {
+     color: blue;
+     display: block;
+     text-align: center;
+     text-decoration: none;
+     background-color: lightgray;
+     }
+     
+nav a:hover {
+     text-decoration: none;
+     color: red;
+     background-color: black;
+     }
+     
+nav ul {
+     width: 35em;
+     padding: 3px;
+     margin: 1px;
+     list-style-type: none;
+     display: flex;
+     display: -webkit-flex;
+     }
+     
+nav li {
+     flex: 1;
+     -webkit-flex: 1;
+     border: 2px solid red;
+     margin: 0.1em;
+     }
+     
+     
+/*Style rule for the current page*/     
+nav a.current_page {
+     color: red;
+     background-color: #E8DECA;
+     }

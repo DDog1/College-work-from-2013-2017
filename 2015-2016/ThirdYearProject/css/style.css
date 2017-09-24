@@ -1,0 +1,230 @@
+/* setting the background-color to a light gray. */
+body{
+	background-color:#C3C3E5;
+}
+
+/*
+    Used for setting the size and color of
+    "Reboot Networking" in the nav bar
+    left hand side.
+*/
+#title{
+	color:white;
+	font-size:18px;
+	padding-left:10px;
+}
+
+/* Makes labels, a, h1 and h2 tags purple. */
+label,a ,h1 ,h2{
+	font-weight:bold;
+	color:#732C7B;
+}
+
+/*
+    When the mouse moves over a tags, it changes
+    the color of the text to white and goes back
+    to default purple when mouse moves away.
+*/
+a:hover {
+    color: white;
+    text-decoration: none;
+
+}
+
+/* Moves the logo on the login screen down so it's not behind nav bar. */
+img{
+	margin-top: 60px;
+}
+
+/*
+    Adds background-color purple and sets the text white. Rounds off the
+    conner's to give a nice smooth button.
+*/
+select {
+    padding:3px;
+    margin: 0;
+    border-radius:4px;
+    background: #732C7B;
+    color:white;
+    font-weight: bold;
+    border:none;
+    outline:none;
+    display: inline-block;
+    cursor:pointer;
+}
+
+/* Used to tide up form layouts makes text bold and adds a border to inputs. */
+label, input[type="user_name"],input[type="password"],input[type="name"],input[type="email"],input[type="text"]{
+	float:left;
+	display:block;	
+	width: 114px;
+	font-weight: bold;
+	border-radius: 10px;
+	border: none;
+
+}
+
+/*
+    Centers the text only on the input types listed below
+    and sets the border color purple. Also makes inputs a
+    little bigger so it's easy to select on mobile.
+*/
+input[type="user_name"],input[type="password"],input[type="name"],input[type="email"],input[type="text"]{
+	width: 180px;
+	height: 40px;
+	border: 2px solid #732C7B;
+	color:#732C7B;
+	text-align: center;
+}
+
+/* Makes a clean brake so no hidden padding or margin messing with layout. */
+br{
+	clear:left;
+}
+
+/* Sets forms width, so forms don't take the default 100% of screen. */
+form{
+	width:13em;
+	padding:10px;
+	margin: auto;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+/*
+    Sets the reset and submit buttons background-color purple and text white.
+    Rounds off the conner's of the buttons. Default rules for submit and reset.
+*/
+input[type="submit"], input[type="reset"]{
+	margin-top:10px;
+	font-weight: bold;
+	background:#732C7B;
+	border: none;
+ 	padding-left: 10%;
+ 	padding-right:10%;
+ 	border-radius: 10px;
+  	cursor: pointer;
+  	color:white;
+    height:30px;
+}
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+
+#move{
+	margin-top: 60px;
+}
+
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+
+/* Sets the color of bootstrap buttons
+input[type="button"]{
+	background-color: #732C7B;
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+} */
+
+/* Sets only the a tags in a nav tag. */
+nav a{
+	font-size:18px;	
+}
+
+/*
+    Style used to float image left and put a border
+    around the picture. Also put margin around the
+    image so no squished text. Used on about page.
+*/
+.left{
+	float: left;
+	border: 2px solid #732C7B;
+	margin: 10px;
+}
+
+/*
+    Style used to float image right and put a border
+    around the picture. Also put margin around the
+    image so no squished text. Used on about page.
+*/
+.right{
+	float: right;
+	border: 2px solid #732C7B;
+	margin: 10px;
+}
+
+/*
+    Style used for making a paragraph push left
+    with no padding or margin affecting it
+*/
+.p_left{
+	float: left;
+	text-align: start;
+}
+
+/*
+    Style used for making a paragraph push right
+    with no padding or margin affecting it
+*/
+.p_right{
+	float: right;
+	text-align: start;
+}
+
+/* Used on the T&C page, makes h2 tags a little smaller */
+.special_layout h2{
+	font-size: 20px;
+
+}
+
+/* Used on the T&C page, makes p tags a little smaller */
+.special_layout p{
+	font-size: 18px;
+}
+/*
+#button_size{
+	width: 130px !important;
+	height: 130px !important;
+	padding: inherit;
+}*/
+
+/*
+    Sets the color of bootstrap buttons and
+    adds a shadow to give that 3D feel.
+*/
+#button_color{
+	background-color: #732C7B;
+	border: none;
+    margin-top: 20px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.container_userHome #computerImage{
+	height: 300px;
+	width: 350px;
+	position: fixed;
+	left: 10px;
+	z-index: -1;
+}
+
+.container_userHome #testMessage{
+
+	margin-top: 80px;
+}
+
+#button_container{
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+}
+html body div.container img#user-default.img-responsive{
+	margin: 0 auto;
+	padding-top: 60px
+
+}
+
+#shadow{
+	box-shadow: 10px 10px 5px #888888;
+}

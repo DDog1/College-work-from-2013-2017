@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Mouse over</title>
+	<style> @import "eyes.css";</style>
+
+	<!--Javascript for the eyes-->
+
+	<script type="text/javascript">
+
+		/* Define an image called eyesLeft */
+		var eyesLeft = new Image();
+		/* Show location of eyesLeft */
+		 eyesLeft.src = "eyesleft.jpg";
+		/* Define an image called eyesRight */
+		  var eyesRight = new Image();
+		/* Show location of eyesRight */
+		  eyesRight.src = "eyesright.jpg";
+
+	</script>
+
+</head>
+
+<body>
+<img src="eyesleft.jpg" alt="picture of eyes" name="image1">
+<a href="#"
+onMouseOver="image1.src = eyesRight.src"
+onMouseOut ="image1.src = eyesLeft.src">Move mouse over the link</a>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12-Nov-2016, 19:54:48
+    Author     : darren
+*/
+label{
+    text-align: left;
+}
+
+body{
+    background-color:#C3C3E5;
+}
+
+label,a ,h1 ,h2{
+    font-weight:bold;
+    color:#732C7B;
+    text-align: inherit;
+}
+
+label, input[type="user_name"],input[type="password"],input[type="name"],input[type="email"],input[type="text"],textarea{
+    float:left;
+    display:block;	
+    width: 114px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type="user_name"],input[type="password"],input[type="name"],input[type="email"],input[type="text"],textarea{
+    width: 204px;
+    height: 40px;
+    border: 2px solid #732C7B;
+    color: #732C7B;
+    text-align: center;
+}
+
+input[type="submit"], input[type="reset"]{
+    margin-top:10px;
+    font-weight: bold;
+    background:#732C7B;
+    border: none;
+    padding-left: 10%;
+    padding-right:10%;
+    border-radius: 10px;
+    cursor: pointer;
+    color:white;
+    height:30px;
+    width: 100px;
+    margin-bottom: 10px;    
+}
+
+input[type="reset"]{
+    float:right;
+}
+br{
+    clear:left;
+}
+
+form{
+    width:13em;
+    padding:10px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+a:hover:after{
+    content: " :D";
+}
+a:hover:before{
+    content: ":D ";
+}
+span{
+    color: red;
+}
+#error{
+    color: red;
+}
+textarea{
+    max-width: 100%;
+}
+th{
+    color: #732C7B;    
+}

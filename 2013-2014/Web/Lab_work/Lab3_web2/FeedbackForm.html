@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Feedback Form</title>
+	<style> @import "FeedbackForm.css";</style>
+</head>
+<body>
+
+
+<!--Start of the from-->
+
+
+<form oninput="x.value=parseInt(a.value)">
+
+	<h1>Feedback Form</h1>
+
+	Name:<input type="text" name="firstName" required placeholder="Enter your name" autofocus>
+	<br>
+	E-mail:<input type = "text" name = "eamil"  placeholder="Enter your email address">
+	<br>
+	Phone:<input type="tel" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" title="Phone Number (Format: +99(99)9999-9999)"  placeholder="Enter your phone number" required>
+	<br>
+	Callback on<input type="date" name="callback" required>
+	<br>
+	Priority:<input type="range" name="a" min="1" max="10" required>
+	<output name="x"></output>
+	<br>
+
+	<!--Start of the div-->
+
+	<div id="buttons">
+		<input type="submit" name="submit" value="Request Call">
+	</div>
+
+	<!--End of the div-->
+
+</form>
+
+<!--End of the from-->
+
+</body>
+</html>

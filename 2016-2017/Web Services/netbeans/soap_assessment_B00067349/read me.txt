@@ -1,0 +1,4 @@
+Darren Cosgrave B00067349
+This assessment was done in netbeans, you need to run the web services first,
+then the client.
+For this assessment I used a ArrayList to store book item details.

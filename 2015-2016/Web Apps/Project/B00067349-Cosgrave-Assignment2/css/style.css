@@ -1,0 +1,35 @@
+body{
+	background-color:#E6E6E6;
+	margin:auto;
+}
+h1{
+	color:#FF00F7;
+}
+#image{
+	width:100px;
+	height:100px;
+}
+#div_center{
+	width:40%;
+	margin:auto;
+}
+h2{
+	color:#BA0BDA;
+}
+a{
+	color:#BA0BDA;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration: none;
+	color: #FF00F7;
+	background-color: white;
+}
+p,h1,h2{
+	font-family: cursive;
+	font:bold;
+	font-style: oblique;
+}
+p{
+	font-size:100%;
+}

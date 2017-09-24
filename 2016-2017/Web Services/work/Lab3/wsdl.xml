@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" name="StockService" targetNamespace="http://stock/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://stock/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+	<types>
+		<xsd:schema>
+			<xsd:element name = "getPriceOfItem" type ="getPriceOfItem"/>
+			<xsd:element name = "getPriceOfItemResponse" type ="getPriceOfItemResponse"/>
+			<xsd:element name = "updateStock" type ="updateStock"/>
+			<xsd:element name = "updateStockResponse" type ="updateStockResponse"/>
+			
+			<xsd:complexType name="getPriceOfItem">
+				<xsd:sequence>
+					<xsd:element name="stockID" type="xsd:int"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			
+			<xsd:complexType name="getPriceOfItemResponse">
+				<xsd:sequence>
+					<xsd:element name="return" type="xsd:double"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			
+			<xsd:complexType name="updateStock">
+				<xsd:sequence>
+					<xsd:element name="stockID" type="xsd:int"/>
+					<xsd:element name="name" type="xsd:String"/>
+					<xsd:element name="amount" type="xsd:int"/>
+					<xsd:element name="price" type="xsd:double"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			
+			<xsd:complexType name="updateStockResponse">
+				<xsd:sequence>
+					<xsd:element name = "return" type="xsd:string"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+	</types>
+	
+	<message name="getPriceOfItem">
+		<part name="parameters" element="tns:getPriceOfItem"/>
+	</message>
+	
+	<message name="getPriceOfItemResponse">
+		<part name="parameters" element="tns:getPriceOfItemResponse"/>
+	</message>
+	
+	<message name="updateStock">
+		<part name="parameters" element="tns:updateStock"/>
+	</message>
+	
+	<message name="updateStockResponse">
+		<part name="parameters" element="tns:updateStockResponse"/>
+	</message>
+	
+	<portType name="Stock">
+		<operation name="getPriceOfItem">
+			<input message="tns:getPriceOfItem" wsam:Action="http://stock/Stock/getPriceOfItemRequest"/>
+			<output message="tns:getPriceOfItemResponse" wsam:Action="http://stock/Stock/getPriceOfItemResponse"/>
+		</operation>
+		<operation name="updateStock">
+			<input message="tns:updateStock" wsam:Action="http://stock/Stock/updateStockRequest"/>
+			<output message="tns:updateStockResponse" wsam:Action="http://stock/Stock/updateStockResponse"/>
+		</operation>
+	</portType>
+	
+	<binding type="tns:Stock" name="StockPortBinding">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="getPriceOfItem">
+			<soap:operation soapAction=""/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+	
+		<operation name="updateStock">
+			<soap:operation soapAction=""/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+		</operation>
+	</binding>
+	
+	<service name="StockService">
+		<port name="StockPort" binding="tns:StockPortBinding">
+			<soap:address location="http://darren-pc:8080/Lab3/StockService"/>
+		</port>
+	</service>
+</definitions>

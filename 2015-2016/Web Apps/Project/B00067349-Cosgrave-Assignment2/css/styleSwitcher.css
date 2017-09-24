@@ -1,0 +1,67 @@
+#switcher {
+	float: right;
+	background-color: white;
+	border: 2px solid #FF00F7;
+	margin: 5px;
+	padding: 4px;
+	font-size: .9em;
+	position:fixed;
+}
+#switcher h3 {
+	margin: 0;
+}
+#switcher .button {
+	width: 105px;
+	float: left;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	background:#BA0BDA;
+	color:white;
+	border-radius: 2px;
+}
+
+body.large {
+	font-size: 1.5em;
+}
+
+body.large .style {
+	font-size: 1.5em;
+}
+
+body.large label {
+	width:180px;
+}
+
+body.large input[type="eMail"]{
+	width:210px;
+}
+body.large input[type="fullName"]{
+	width:210px;
+}
+
+body.large input[type="contactNumber"]{
+	width:210px;
+}
+
+body.large input[type="date"]{
+	width:210px;
+}
+body.large #googleMap {
+	margin-top:100px;
+}
+
+.selected {
+	font-weight: bold;
+}
+
+.hidden {
+	display: none;
+}
+
+#switcher .hover {
+	cursor: pointer;
+	background-color: white;
+	border: 2px solid #FF00F7;
+	color:#FF00EB;
+}

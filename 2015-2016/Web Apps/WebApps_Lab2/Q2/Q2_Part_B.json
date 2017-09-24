@@ -1,0 +1,53 @@
+{"booking":
+	{
+		"departingTicket":
+		[
+			{
+				"name":"Friend one",
+				"departingLocation":"Dublin",
+				"departingTime":"March 4th 12:15pm",
+				"destination":"Rome",
+				"arrivalTime":"15:25pm",
+				"holidayLenght":"one week"
+			},
+
+			{
+				"name":"Friend two",
+				"departingLocation":"Dublin",
+				"departingTime":"March 4th 12:15pm",
+				"destination":"Rome",
+				"arrivalTime":"15:25pm",
+				"holidayLenght":"one week"
+			}
+		],
+	
+		"returnTicket":
+		[
+			{
+				"name":"Friend one",
+				"departingLocation":"Rome",
+				"departingTime":"March 11th 16:05pm",
+				"destination":"Dublin",
+				"arrivalTime":"17:20pm",
+				"holidayLenght":"one week"
+			},
+
+			{
+				"name":"Friend two",
+				"departingLocation":"Rome",
+				"departingTime":"March 11th 16:05pm",
+				"destination":"Dublin",
+				"arrivalTime":"17:20pm",
+				"holidayLenght":"one week"
+			}
+		],
+	
+		"stayingIn":
+		{
+			"hotelName":"Radisson Hotel",
+			"numberOfPeopleInRoom":"Two",
+			"duration":"7 nights",
+			"roomNum":"6th floor room 12"
+		}
+	}
+}

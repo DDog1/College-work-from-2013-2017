@@ -1,0 +1,68 @@
+/*Style rule for the layout and color*/
+body{
+	background-color:lightgray;
+	padding-left: 8px;
+}
+section{
+	border:2px solid red;
+	width:1054px;
+	background-color: #E8DECA;
+	padding:10px;
+	float: left;
+	height: 352px;
+}
+
+nav{
+	border:2px solid red;
+	width: 217px;
+	background-color: #E8DECA;
+	padding:10px;
+	float: left;
+	height: 352px;
+}
+
+h1.style{
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:22px;
+}
+
+h1{
+	text-align:center;
+	padding-top:1px;
+}
+
+#space{
+width: 330px;
+}
+/*Style rules for the images*/
+#image1{
+	padding-left:10px;
+	width:100px;
+	height:90px;
+	float:left;
+}
+#image2{
+	padding-right:10px;
+	width:100px;
+	height:90px;
+	float:right;
+}
+
+
+header{
+	border:2px solid red;
+	background-color: #E8DECA;
+	padding:10px;
+	width: 1295px;
+}
+
+/*Style rule for the footer*/
+footer{
+	text-align:center;
+	border:2px solid red;
+	background-color: #E8DECA;
+	padding:10px;
+	margin-top: 374px;
+	width: 1295px;
+}

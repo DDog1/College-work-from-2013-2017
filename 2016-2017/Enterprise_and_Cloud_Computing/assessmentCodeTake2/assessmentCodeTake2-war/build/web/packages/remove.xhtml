@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Remove Package</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <h:outputStylesheet library="css" name="login.css"/>
+        <h:outputStylesheet library="css" name="animate.css"/>
+    </h:head>
+    <body>
+        <c:if test="#{customerController.login==true}">
+            <h:form class="animated fadeInLeft">
+                <h1>Remove package</h1>
+                <div>
+                    <h:outputLabel value="Id" for="id"/>
+                    <h:inputText id="id" label="Id" required="true" value="#{packageController.packages.packagesId}"/>
+                </div>
+                <h:commandButton id="submit" value="Remove" action="#{packageController.remove()}"/>
+                <h:commandButton id="reset" value="reset" type="reset"/>
+                <br />
+                <h:link outcome="packageHome" value="Back to home"/>
+            </h:form>
+            <h:message for="id" style="color: red;"/><br />
+        </c:if>
+        <c:if test="#{customerController.login==false}">
+            <center>
+                <span>Nice try hacker!! :P</span><br/>
+                <h:link outcome="/index" value="Back to login"/>
+            </center>
+        </c:if>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<invoice>
+	<date>01 January 2013 </date>
+	<refNum>Invoice No. 20130101-1</refNum>
+	<fullName>Full Name </fullName>
+	<addressLine1>Address Line 1</addressLine1>
+	<addressLine2>Address Line 2</addressLine2>
+	<city>City</city>
+	
+	<text>Item Rate Units</text>
+	<item1>Web design and development</item1>
+	<rate1>$50.00</rate1>
+	<units1>10</units1>
+	
+	<item2>Annual web hosting</item2>
+	<rate2>$100.00</rate2>
+	<units2>1</units2>
+	
+	<total>$600.00</total>
+	<gst>$90.00</gst>
+	<amountPaid>$200.00</amountPaid>
+	<amountDue>$490.00</amountDue>
+</invoice>

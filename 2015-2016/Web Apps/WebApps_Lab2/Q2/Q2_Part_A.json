@@ -1,0 +1,19 @@
+{"invoice":
+	{"date":"01 January 2013",
+	"refNum":"Invoice No. 20130101-1",
+	"fullName":"Full Name",
+	"addressLine1":"Address Line 1",
+	"addressLine2":"Address Line 2",
+	"city":"City",
+	"text":"Item Rate Units",
+	"item1":"Web design and development",
+	"rate1":"$50.00",
+	"units1":"10",
+	"item2":"Annual web hosting",
+	"rate2":"$100.00",
+	"units2":"1",
+	"total":"$600.00",
+	"gst":"$90.00",
+	"amountPaid":"$200.00",
+	"amountDue":"$490.00"}
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Add Package</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <h:outputStylesheet library="css" name="login.css"/>
+        <h:outputStylesheet library="css" name="animate.css"/>
+    </h:head>
+    <body>
+        <c:if test="#{customerController.login==true}">
+            <h:form class="animated fadeInLeft">
+                <h1>Add package</h1>
+                <div>
+                    <h:outputLabel value="Name" for="name"/>
+                    <h:inputText id="name" label="Name" required="true" value="#{packageController.packages.name}"/>
+                </div>
+                <div>
+                    <h:outputLabel value="Description" for="description"/>
+                    <h:inputTextarea id="description" label="Description" required="true" value="#{packageController.packages.description}"/>
+                </div>
+                <div>
+                    <h:outputLabel value="Duration" for="duration"/>
+                    <h:inputText id="duration" label="Duration" required="true" value="#{packageController.packages.duration}"/>
+                </div>
+                <div>
+                    <h:outputLabel value="Price" for="price"/>
+                    <h:inputText id="price" label="Price" required="true" value="#{packageController.packages.price}"/>
+                </div>
+                <h:commandButton id="submit" value="Add" action="#{packageController.add()}"/>
+                <h:commandButton id="reset" value="reset" type="reset"/>
+                <br />
+                <h:link outcome="packageHome" value="Back to home"/>
+            </h:form>
+            <h:message for="name" style="color: red;"/><br />
+            <h:message for="description" style="color: red;"/><br />
+            <h:message for="duration" style="color: red;"/><br />
+            <h:message for="price" style="color: red;"/>
+        </c:if>
+        <c:if test="#{customerController.login==false}">
+            <center>
+                <span>Nice try hacker!! :P</span><br/>
+                <h:link outcome="/index" value="Back to login"/>
+            </center>
+        </c:if>
+    </body>
+</html>

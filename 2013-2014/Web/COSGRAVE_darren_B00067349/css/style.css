@@ -1,0 +1,31 @@
+h1, h2{
+	color:white;
+}
+
+img{
+	width:300px;
+	height:250px;
+	margin-left: 12px;
+}	
+	
+p{
+	font-size:1em;
+	font-family:sans-serif;
+	color:white;
+}
+
+body{
+	background:url('../images/iron-man-mask-closeup.jpg') no-repeat top #000; 
+	background-size: 100%;
+        
+}
+
+ul{
+	color:white;
+	list-style-type: none;
+	
+}
+
+footer{
+	padding : 1px;
+}

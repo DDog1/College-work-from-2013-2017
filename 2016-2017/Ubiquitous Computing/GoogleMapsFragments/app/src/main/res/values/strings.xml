@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GoogleMapsFragments</string>
+    <string-array name="city_names">
+        <item>Current Location</item>
+        <item>Dublin</item>
+        <item>Kerry</item>
+        <item>Belfast</item>
+        <item>Cork</item>
+        <item>Galway</item>
+        <item>Wexford</item>
+    </string-array>
+</resources>

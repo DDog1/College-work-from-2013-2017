@@ -1,0 +1,36 @@
+***************************************
+
+CREATE TABLE PACKAGES (packages_ID INT NOT NULL, 
+name VARCHAR(100) NOT NULL, description VARCHAR(200) NOT NULL,
+duration VARCHAR(200) NOT NULL, price DECIMAL NOT NULL, PRIMARY KEY (packages_ID));
+
+INSERT INTO APP.PACKAGES (packages_ID,name,description,duration,price)
+VALUES (1, 'Neck & Shoulder Massage','This short and sweet massage concentrates on neck and shoulders to give instant relaxation.','00:15:00',15);
+
+***************************************
+
+CREATE TABLE CUSTOMERS (customer_ID INT NOT NULL, 
+firstname VARCHAR(20) NOT NULL, lastname VARCHAR(20) NOT NULL,
+phone VARCHAR(20), email VARCHAR(50), address1 VARCHAR(50), address2 VARCHAR(50),
+city VARCHAR(20), state VARCHAR(40), username VARCHAR(50), password VARCHAR(50),
+PRIMARY KEY (customer_ID));
+
+***************************************
+
+CREATE TABLE BOOKINGS (booking_ID INT NOT NULL,
+date_day VARCHAR(200) NOT NULL, time_day VARCHAR(200) NOT NULL,
+package_FK INT NOT NULL, customer_FK INT NOT NULL,
+PRIMARY KEY (booking_ID));
+
+***************************************
+******ADDING THE FK TO BOOKINGS********
+
+ALTER TABLE BOOKINGS
+ADD FOREIGN KEY (package_FK)
+REFERENCES PACKAGES (packages_ID);
+
+ALTER TABLE BOOKINGS
+ADD FOREIGN KEY (customer_FK)
+REFERENCES CUSTOMERS (customer_ID);
+
+***************************************

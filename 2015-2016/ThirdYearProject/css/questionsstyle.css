@@ -1,0 +1,88 @@
+body{
+	background-color:#C3C3E5;
+}
+
+label,a{
+	font-weight:bold;
+	color:#732C7B;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+img{
+	margin-top: 60px;
+}
+
+br{
+	clear:left;
+}
+
+#space{
+	margin-top:10px;
+	background-color:#C3C3E5;
+}
+
+input[type="submit"], input[type="reset"]{
+	margin-top:10px;
+	font-weight: bold;
+	background:#732C7B;
+	border: none;
+ 	padding-left: 10%;
+ 	padding-right:10%;
+ 	border-radius: 10px;
+  	cursor: pointer;
+  	color:white;
+}
+
+#move{
+	margin-top: 60px;
+}
+
+#title{
+	color:white;
+	font-size:18px;
+	padding-left:10px;
+}
+
+.dg-question-label{
+	text-align: left;
+	padding: 1em;
+}
+
+.dg-question-option{
+	text-align: left;
+	padding: 0.5em;
+	border-bottom: 1px solid black;
+}
+
+.dg-question-option label{
+	margin-left:10px;
+}
+
+#questions{
+	margin-top: 50px;
+	padding: 1em;
+	border-radius: 5px;
+	background-color: white;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#result{
+	padding: 1em;
+	border-radius: 5px;
+	background-color: white;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.dg-answer-button-container{
+	padding: 1em;
+}
+
+.wrongUserInput{
+	font-weight: bold;
+	color: red;
+}
+

@@ -1,0 +1,22 @@
+/*Style rules for the form*/
+
+form{
+	margin-right:65em;
+	padding:10px;
+	border:2px solid red;
+	background-color:LightGray;
+	}
+
+/*A div id for the buttons submit and reset*/
+
+#buttons{
+	margin-left:65px;
+	margin-top:10px
+	}
+
+/*A class id for h1*/
+
+.class{
+	margin:0px;
+	margin-bottom:10px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Survey Form</title>
+	<style> @import "surveyForm.css";</style>
+</head>
+<body>
+
+
+<!--Start of the from-->
+
+
+<form>
+
+	<h1>Survey</h1>
+
+	If you have a moment, we'd appreciate if you would fill out this survey.
+
+	<!--Start of the fieldset-->
+
+	<fieldset>
+
+		<legend>Your information</legend>
+
+		First name:<input type="text" name="firstName" required placeholder="Enter frist name" autofocus>
+		<br>
+		Last name:<input type="text" name="lastName" required placeholder="Enter last name">
+		<br>
+		Your Email:<input type = "text" name = "eamil">
+		<br>
+		Phone number:<input type="tel" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" title="Phone Number (Format: +99(99)9999-9999)" required="">
+
+	</fieldset>
+
+	<!--End of the fieldset-->
+
+	<!--Start of the fieldset-->
+
+	<fieldset>
+
+		<legend>How did you hear about us?</legend>
+
+		<input type="radio"  name="info" value="Search engine">Search engine
+		<input type="radio"  name="info" value="Word of mouth">Word of mouth
+		<input type="radio"  name="info" value="Other">Other
+
+	</fieldset>
+
+	<!--End of the fieldset-->
+
+	<!--Start of the fieldset-->
+
+	<fieldset>
+
+		<legend>Special Offers</legend>
+
+		<input type="checkbox" checked name="checkbox" value="checkbox">Yes Would you like to recive announcements about new DVDs and special offers?<br>
+		<br>
+		Please contact me by
+
+				<!--Start of the option-->
+
+				<select name="Options" size = "1">
+						<option value="email"selected>email</option>
+						<option value="post">post</option>
+						<option value="text">text</option>
+				</select>
+
+				<!--End of the option-->
+
+	</fieldset>
+
+	<!--End of the fieldset-->
+
+		<!--Start of the div-->
+
+		<div id="buttons">
+			<input type="submit" name="submit" value="Submit">
+			<input type="reset" name="reset" value="Reset">
+		</div>
+
+		<!--End of the div-->
+
+</form>
+
+<!--End of the from-->
+
+</body>
+</html>

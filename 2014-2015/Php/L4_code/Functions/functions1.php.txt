@@ -1,0 +1,22 @@
+<html>
+<head><title>Function examples</title></head>
+<body>
+<?php
+
+echo "Max of 2 and 3 is ", max(2,3), "<br/>";
+
+echo "<br>";
+
+
+
+
+function max2($a, $b)
+{
+   if ($a > $b) return $a;
+   return $b;
+}
+
+
+?>
+</body>
+</html>

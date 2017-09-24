@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>gym membership</title>
+	<style> @import "css/gym_membership.css";</style>
+
+	<!--Start of Javascript-->
+
+	<script type="text/javascript">
+
+	function check(input)
+	{
+		var Password = document.getElementById('Password').value
+		var cPassword = document.getElementById('cPassword').value
+		if (Password != cPassword)
+		{
+			input.setCustomValidity('Password Must be Matching.');
+		}
+		else
+		{
+			// input is valid -- reset the error message
+			input.setCustomValidity('');
+		}
+	}
+
+	</script>
+
+	<!--End of Javascript-->
+
+</head>
+<body>
+
+<!--Start of Form-->
+
+<form action="confirmation.html" oninput="x.value=parseInt(a.value)" autocomplete="on">
+
+	<!--Start of header-->
+
+	<header>
+
+		<img src="images/image_1.jpg" id="image1" alt="image 1">
+
+		<img src="images/image_2.jpg" id="image2" alt="image 2">
+
+		<h1>TOTAL FITNESS</h1>
+
+	</header>
+
+	<!--End of header-->
+
+	<p>Complete this form and press the Send button          <span>*Indicates a required field</span></p>
+
+	<!--Fieldset for input-->
+
+	<fieldset>
+		<legend>Personal Details</legend>
+		<div id="style">
+
+			<!--Start of section-->
+
+			<section>
+				<label for="Name">Name:</label>
+				<input type="text" name="Name" required placeholder="Enter name" id="Name" autofocus=""><span>*</span><br>
+
+				<label for="Phone">Phone number:</label>
+				<input type="tel" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" title="Phone Number (Format: +99(99)9999-9999)" id="Phone" required><span>*</span><br>
+
+				<label for="Date">Date of Birth:</label>
+				<input type="date" name="Date" id="Date" required><span>*</span><br>
+
+				<label for="Password">Password:</label>
+				<input type="password" maxlength="20" name="password" id="Password" required><span>*</span>
+			</section>
+
+			<!--End of section-->
+
+			<!--Start of section-->
+
+			<section>
+				<label for="Address">Address:</label>
+				<input type="text" name="Address" required placeholder="Enter address" id="Address"><span>*</span><br>
+
+				<label for="Email">Email:</label>
+				<input type="email" name="Email" required id="Email" autocomplete="off"><span>*</span><br>
+
+				<label for="Gender">Gender:</label>
+				<input type="radio" name="Gender" value="Male" required>Male <input type="radio" name="Gender" value="Female" required id="Gender">Female<span> *</span><br>
+
+				<label for="Password">Reenter Password:</label>
+				<input type="password" maxlength="20" name="password" required id="cPassword" oninput="check(this)"><span>*</span>
+			</section>
+
+			<!--End of section-->
+
+		</div>
+	</fieldset>
+
+	<!--Fieldset for condition-->
+
+	<fieldset>
+
+		<legend>Health / Physical Condition</legend>
+
+		<select name="Options" size="1">
+			<optgroup label="--SELECT--">
+				<option value="Unfit">Unfit</option>
+				<option value="Fit" selected="">Fit</option>
+				<option value="Healthy">Healthy</option>
+				<option value="Unwell">Unwell</option>
+				<option value="Overweight">Overweight</option>
+			</optgroup>
+		</select>
+
+		<br>
+
+		<label>weight:</label>
+		<input type="range" name="a" min="8" max="20" step="2" id="Weigth">
+		<output name="x"></output>
+
+	</fieldset>
+
+	<!--Fieldset for membership-->
+
+	<fieldset>
+
+		<legend>Membership</legend>
+
+		<label>Category</label>
+				<input type="radio" name="Category" value="Student" required>Student
+				<input type="radio" name="Category" value="Adult" class="adult" required>Adult
+				<input type="radio" name="Category" value="Senior" class="senior" required>Senior
+				<input type="radio" name="Category" value="Off-peak" class="off" required>Off-peak
+
+		<br>
+
+		<label>Term</label>
+
+			<input type="radio" name="Term" value="3 months" required>3 months
+			<input type="radio" name="Term" value="6 months" required>6 months
+			<input type="radio" name="Term" value="9 months" required>9 months
+			<input type="radio" name="Term" value="12 months" required>12 months
+
+	</fieldset>
+
+	<!--Fieldset for aims-->
+
+	<fieldset>
+
+		<legend>Exercise Aims</legend>
+		<input type="checkbox" name="Health" value="Health" class="Health">Health
+		<input type="checkbox" name="Energy" value="Energy" class="Energy">Energy
+		<input type="checkbox" name="Fitness" value="Fitness" class="Fitness">Fitness
+
+		<br>
+
+		<input type="checkbox" name="Toning" value="Toning" class="Toning">Toning
+		<input type="checkbox" name="Weigth Loss" value="Weigth Loss" class="Weigth">Weigth Loss
+		<input type="checkbox" name="Rehab" value="Rehab" class="Rehab">Rehab
+
+	</fieldset>
+
+	<!--Fieldset for pay method-->
+
+	<fieldset>
+
+		<legend>PAYMENT METHOD</legend>
+		<input type="radio" name="Pay" value="Visa" class="visa" required><img src="images/visa.jpg" id="visa" alt="visa">
+		<input type="radio" name="Pay" value="MasterCard" required><img src="images/master_card.jpg" id="master" alt="master card">
+		<input type="radio" name="Pay" value="PayPal" required><img src="images/paypal_logo.jpeg" id="paypal" alt="paypal">
+
+	</fieldset>
+
+	<!--Fieldset for services-->
+
+	<fieldset>
+
+		<legend>Are you interestes in other services?</legend>
+
+		<input type="checkbox" name="None" value="None" class="None">None
+		<input type="checkbox" name="Massage" value="Massage" class="Massage">Massage
+		<input type="checkbox" name="Personal Training" value="Personal Training" class="Personal">Personal Training
+		<br>
+		<input type="checkbox" name="Nutrition" value="Nutrition" class="Nutrition">Nutrition
+		<input type="checkbox" name="Steam Room" value="Steam Room" class="Steam">Steam Room
+		<input type="checkbox" name="Fitness Classes" value="Fitness Classes" class="Fitness_class">Fitness Classes
+
+	</fieldset>
+
+	<!--Fieldset for other text-->
+
+	<fieldset>
+
+		<legend>Other details</legend>
+
+		<textarea name="comments"></textarea>
+
+	</fieldset>
+
+	<!--Fieldset with an uplode-->
+
+	<fieldset>
+
+		<legend>Uplode a photo of yourself</legend>
+		<input type="file" name="file" id="file">
+
+	</fieldset>
+
+	<!--Buttons-->
+
+	<div id="buttons">
+		<input type="submit" name="submit" value="Send">
+		<input type="reset" name="reset" value="Clear">
+	</div>
+
+</form>
+
+<!--End of Form-->
+
+<a href="home_page.html">Home page</a>
+
+</body>
+</html>

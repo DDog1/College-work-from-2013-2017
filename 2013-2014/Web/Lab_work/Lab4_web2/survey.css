@@ -1,0 +1,95 @@
+/*Used to change the color of the h1 text*/
+
+h1{
+	color:red;
+	text-align:center;
+}
+
+/*A div id used for the buttons, submit and reset*/
+
+#buttons input[type="submit"], input[type="reset"]{
+	margin-left:50px;
+	margin-top:10px
+
+  	display: block;
+  	background:red;
+  	border:10px solid black;
+  	padding:2px;
+ 	border:none;
+  	border-radius: 2px;
+  	cursor: pointer;
+	text-align:center;
+	width:150px;
+}
+
+/*Style rules used for the form*/
+
+form{
+	width:35%;
+	padding:10px;
+	border:2px solid red;
+	background-color:#E8DECA;
+}
+
+/*Style rules used for the fieldset*/
+
+fieldset{
+	border:2px solid red;
+	background-color:LightGray;
+	margin-top:10px;
+}
+
+/*Style rule used for the legend*/
+
+legend{
+	width:35%;
+	color:red;
+	border:2px solid blue;
+	background-color:#E8DECA;
+	margin-left:30px
+}
+
+/*Style rule used for the input for the checkbox*/
+
+input[type="checkbox"]{
+	margin-left: 6.5em;
+	cursor: pointer;
+	width:20px;
+}
+
+
+label{
+	width: 90px;
+	font-weight: bold;
+}
+
+label, input {
+	float:left;
+	display:block;	
+}
+	
+br{
+clear:left;
+}
+
+
+/*Used to style the span*/
+
+span{
+	font-weight: bold;
+}
+
+
+
+lable, input{
+	color: #000;
+	background-color: #fe9a80;
+	border: 0.1em solid #999999;
+	width: 150px; 
+}
+
+/*Used to move the select in*/
+
+select{
+	margin-left:6.5em;
+}

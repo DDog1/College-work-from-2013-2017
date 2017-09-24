@@ -1,0 +1,25 @@
+[
+	{
+		"heading":"Bridal Beauty"
+	},
+	
+	{
+		"part":"Our experienced therapists and make up artists provide the highest standards of treatments using professional products to ensure you look beautiful on your most important day."
+	},
+	
+	{
+		"part":"We provide packages for the bride and bridal party. From waxing to nails to make up. We cover all your beauty essentials, with excellent service at amazing value."
+	},
+	
+	{
+		"title":"Make Up",
+		"list":[
+		"Bridal Makeup Consultation &euro;40",
+		"Bride &euro;50",
+		"Bridesmaid &euro;35",
+		"Mother of the Bride &euro;35",
+		"Strip Lashes &euro;15",
+		"Individual Lashes &euro;15 - &euro;25"
+		]
+	}
+]

@@ -1,0 +1,17 @@
+/*Style rules used for the form*/
+
+form{
+	/*margin-right:50em;*/
+	width:20%;
+	padding:10px;
+	border:2px solid red;
+	background-color:LightGray;
+	border-radius: 10px;
+}
+
+/*A div id used for the buttons, submit and reset*/
+
+#buttons{
+	margin-left:40px;
+	margin-top:10px
+}

@@ -1,0 +1,33 @@
+{"skiHoliday":
+	{"person":[
+		
+		{"personal":
+			{"name":"Darren Cosgrave",
+			"address":"Dublin",
+			"DOB":"10/10/1994",
+			"sex":"Male",
+			"phone":"0123456789",
+			"NOK":"Mother"},
+			
+		"holiday":
+			{"type":"Winter Skiing",
+			"date":"24/01/2017",
+			"duration":"2 Weeks"}
+		},
+		
+		{"personal":
+			{"name":"Ryan Cosgrave",
+			"address":"Dublin",
+			"DOB":"01/01/2000",
+			"sex":"Male",
+			"phone":"0123456789",
+			"NOK":"Father"},
+			
+		"holiday":
+			{"type":"Winter Skiing",
+			"date":"24/01/2017",
+			"duration":"2 Weeks"}
+		}
+		
+	]}
+}

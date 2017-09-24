@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>User Data</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <h:outputStylesheet library="css" name="login.css"/>
+        <h:outputStylesheet library="css" name="animate.css"/>
+    </h:head>
+    <body class="animated fadeInLeft">
+        <c:if test="#{customerController.login==true}">
+            <center>
+                <h1>User data for #{customerController.username}</h1>
+                <h:dataTable value="#{customerController.data}" var="data" border="0" cellpadding="2" cellspacing="0" rules="all" style="border:solid 1px">
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Firstname"/>
+                        </f:facet>
+                        <h:outputText value="#{data.firstname}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Lastname"/>
+                        </f:facet>
+                        <h:outputText value="#{data.lastname}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Phone"/>
+                        </f:facet>
+                        <h:outputText value="#{data.phone}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Email"/>
+                        </f:facet>
+                        <h:outputText value="#{data.email}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Address"/>
+                        </f:facet>
+                        <h:outputText value="#{data.address1}"/><br/>
+                        <h:outputText value="#{data.address2}"/><br/>
+                        <h:outputText value="#{data.city}"/><br/>
+                        <h:outputText value="#{data.state}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Username"/>
+                        </f:facet>
+                        <h:outputText value="#{data.username}"/>
+                    </h:column>
+                </h:dataTable>
+                <h:link outcome="userHome" value="User Options"/>
+            </center>
+        </c:if>
+        <c:if test="#{customerController.login==false}">
+            <center>
+                <span>Nice try hacker!! :P</span><br/>
+                <h:link outcome="/index" value="Back to login"/>
+            </center>
+        </c:if>
+    </body>
+</html>

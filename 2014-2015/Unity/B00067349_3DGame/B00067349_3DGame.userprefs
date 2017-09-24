@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="B00067349_3DGame.CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Boss_Fire.cs">
+    <Files>
+      <File FileName="Assets\Scripts\FireProjectile.cs" Line="54" Column="3" />
+      <File FileName="Assets\Scripts\Boss_Fire.cs" Line="36" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

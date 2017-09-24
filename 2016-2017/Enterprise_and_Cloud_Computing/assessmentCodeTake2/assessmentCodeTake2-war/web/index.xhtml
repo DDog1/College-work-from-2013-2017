@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Login</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <h:outputStylesheet library="css" name="login.css"/>
+        <h:outputStylesheet library="css" name="animate.css"/>
+    </h:head>
+    <h:body>
+        <center>
+            <img class="animated flip" src="resources/images/login_default.png"/>
+        </center>
+        
+        <h:form id="login" class="animated fadeInLeft">
+            <span>#{customerController.message}</span>
+            <div>
+                <h:outputLabel value="Username" for="username"/>
+                <h:inputText id="username" label="Username" required="true" value="#{customerController.customers.username}"/>
+            </div>
+            <div>
+                <h:outputLabel value="Password" for="password"/>
+                <h:inputSecret id="password" label="Password" required="true" value="#{customerController.customers.password}"/>
+            </div>
+            <br />
+            <h:commandButton id="login" value="Login" action="#{customerController.login()}"/>
+            <h:commandButton id="reset" value="reset" type="reset"/>
+            <br />
+            <h:link outcome="user/register" value="Register now!"/>
+        </h:form>
+        <div>
+            <center>
+                <h:message for="username" style="color: red;"/><br />
+                <h:message for="password" style="color: red;"/>
+            </center>
+        </div>
+    </h:body>
+</html>

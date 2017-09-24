@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.darren.weather.settings">
+
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/city"
+    android:textSize="24sp"
+    android:layout_toEndOf="@+id/textView"
+    android:entries="@array/city_names"
+    android:layout_alignParentTop="true"
+    android:layout_above="@+id/textView3" />
+
+<Switch
+    android:text="Use current location"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/switch1"
+    android:textSize="24sp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:visibility="gone" />
+
+<TextView
+    android:text="Location"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView"
+    android:textSize="24sp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:textColor="@android:color/background_dark"
+    android:paddingBottom="15dp" />
+
+<TextView
+    android:text="Days in Forecast"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView3"
+    android:layout_below="@+id/textView"
+    android:layout_alignParentStart="true"
+    android:layout_toStartOf="@+id/city"
+    android:textColor="@android:color/background_dark"
+    android:textSize="24sp"
+    android:paddingBottom="15dp" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="number"
+    android:ems="10"
+    android:layout_alignBottom="@+id/textView3"
+    android:layout_toEndOf="@+id/textView"
+    android:id="@+id/daysForecast"
+    android:layout_below="@+id/city" />
+
+<TextView
+    android:text="Rain Threshold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView4"
+    android:textColor="@android:color/background_dark"
+    android:textSize="24sp"
+    android:layout_below="@+id/textView3"
+    android:layout_toStartOf="@+id/daysForecast"
+    android:paddingBottom="15dp" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="number"
+    android:ems="10"
+    android:layout_alignBottom="@+id/textView4"
+    android:layout_toEndOf="@+id/textView3"
+    android:id="@+id/rainThreshold"
+    android:layout_below="@+id/textView3" />
+
+<Button
+    android:text="Save"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/save"
+    android:layout_below="@+id/textView4"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:textSize="24sp" />
+
+<Button
+    android:text="@android:string/cancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/save"
+    android:id="@+id/cancel"
+    android:layout_alignParentEnd="true"
+    android:layout_toEndOf="@+id/switch1"
+    android:layout_alignParentStart="true"
+    android:textSize="24sp" />
+
+</RelativeLayout>

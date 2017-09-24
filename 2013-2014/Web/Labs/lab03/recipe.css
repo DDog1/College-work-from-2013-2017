@@ -1,0 +1,21 @@
+body{	
+font-family: sans-serif;	
+}
+
+ul{ 
+list-style-type: none;	
+}
+
+li{	
+margin-top: 10px;	
+}
+
+img{
+	float: right;
+	margin-left: 12px;
+}
+
+dt{
+	font-weight: bold;
+	margin-top: 10px;
+}

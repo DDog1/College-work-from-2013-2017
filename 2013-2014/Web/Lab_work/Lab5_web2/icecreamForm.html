@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ice cream</title>
+	<style> @import "icecream.css";</style>
+</head>
+<body>
+
+<!-- Start of the from -->
+<form>
+
+	<!-- Start of the header -->
+
+	<header>
+		<img src="icecream_1.jpg" id="image1"><img src="icecream_2.jpg" id="image2">
+		<h1>The ITB Ice Cream Shop</h1>
+	</header>
+
+	<!-- End of the header -->
+
+	<h2>Fill out the form below and click "Order Now" to order</h2>
+	<legend>Choose your cone:</legend>
+
+	<!-- Start of the select -->
+
+	<select name="Options" size = "1">
+		<option value="Plain"selected>Plain</option>
+		<option value=""></option>
+	</select>
+
+	<!-- End of the select -->
+
+	<br>
+
+	<hr>
+
+	<legend>Ice Cream:</legend>
+	<input type="radio" name="flavour" value="Chocolate" ><label>Chocolate</label>
+	<input type="radio" name="flavour" value="Vanilla" ><label>Vanilla</label>
+	<input type="radio" name="flavour" value="Coffee" ><label>Coffee</label>
+	<br>
+
+	<hr>
+
+	<legend>Extras:</legend>
+	<input type="checkbox" name="Sprinkles" value="Sprinkles" ><label>Sprinkles</label>
+	<input type="checkbox" name="Choco Sauce" value="Choco Sauce" ><label>Choco Sauce</label>
+	<input type="checkbox" name="Caramel Sauce" value="Caramel Sauce" ><label>Caramel Sauce</label>
+
+	<br>
+
+	<hr>
+
+	<legend>Name:</legend>
+	<input type="text" name="Name">
+
+	<br>
+
+	<hr>
+
+	<legend>Customer Comments:</legend>
+	<textarea type="textarea" rows="10" cols="40" name="comments"></textarea>
+
+	<br>
+
+	<hr>
+
+	<!-- Start of the div -->
+
+	<div id="buttons">
+		<input type = "submit" name = "Order Now" value = "Order Now">
+		<input type = "reset" name = "Cancel" value = "Cancel">
+	</div>
+
+	<!-- End of the div -->
+
+	<hr>
+
+</form>
+
+<!-- End of the from -->
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+/*
+    all these blocks will be a flex box
+    with left alignment
+*/
+#column_container,
+#column_container nav,
+#column_container aside,
+#column_container section {
+    display:-webkit-box;
+    display: box;
+}
+
+/*
+all 3 columns to have a little padding on all 4 sides
+and
+content in the column should stack vertically !
+*/
+#column_container nav,
+#column_container aside,
+#column_container section {
+    height: auto;
+    padding: 0.5em;
+
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+}
+
+/*
+left and right columns to be a fixed with
+*/
+#column_container nav {
+    width: 20em;
+}
+
+#column_container aside {
+    width: 30em;
+}
+
+
+/*
+main section to expand to use up remaining space
+*/
+#column_container section {
+    -webkit-box-flex: 1;
+    box-flex: 1;
+}
+
+
+/*
+sources of examples  discussion about flex boxes at the following:
+
+http://designshack.net/articles/css/farewell-floats-the-future-of-css-layout/
+http://blog.isotoma.com/2010/08/css3-flexbox/
+http://stiankarlsen.me/blog/flexbox-tutorial-2013/
+
+*/
+
+/*
+NOTE:
+If you are not directly setting widths for left / right columns (nav / aside)
+then ensure you set some reasonable minimum width - to prevent overflow
+
+e.g.
+
+#main,
+header,
+footer {
+    min-width: 200px;
+}
+
+
+*/

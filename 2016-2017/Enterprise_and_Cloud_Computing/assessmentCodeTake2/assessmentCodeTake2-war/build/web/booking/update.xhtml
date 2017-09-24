@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Update Booking</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <h:outputStylesheet library="css" name="login.css"/>
+        <h:outputStylesheet library="css" name="animate.css"/>
+    </h:head>
+    <body>
+        <c:if test="#{customerController.login==true}">
+            <h:form class="animated fadeInLeft">
+                <h1>Update package</h1>
+                <div>
+                    <h:outputLabel value="DateDay" for="dateDay"/>
+                    <h:inputText id="dateDay" label="DataDay" required="true" value="#{bookingController.bookings.dateDay}"/>
+                </div>
+                <div>
+                    <h:outputLabel value="TimeDay" for="timeDay"/>
+                    <h:inputText id="timeDay" label="TimeDay" required="true" value="#{bookingController.bookings.timeDay}"/>
+                </div>
+                <div>
+                    <h:outputLabel value="PackageFK" for="packageFK"/>
+                    <h:inputText id="packageFK" label="PackageFK" required="true" value="#{bookingController.bookings.packageFk}"/>
+                </div>
+                <div>
+                    <h:outputLabel value="CustomerFK" for="customerFK"/>
+                    <h:inputText id="customerFK" label="CustomerFK" required="true" value="#{bookingController.bookings.customerFk}"/>
+                </div>
+                <h:commandButton id="submit" value="Update" action="#{bookingController.update()}"/>
+                <h:commandButton id="reset" value="reset" type="reset"/>
+                <br />
+                <h:link outcome="bookingHome" value="Back to home"/>
+            </h:form>
+            <h:message for="dateDay" style="color: red;"/><br />
+            <h:message for="timeDay" style="color: red;"/><br />
+            <h:message for="packageFK" style="color: red;"/><br />
+            <h:message for="customerFK" style="color: red;"/>
+        </c:if>
+        <c:if test="#{customerController.login==false}">
+            <center>
+                <span>Nice try hacker!! :P</span><br/>
+                <h:link outcome="/index" value="Back to login"/>
+            </center>
+        </c:if>
+    </body>
+</html>

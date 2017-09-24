@@ -1,0 +1,92 @@
+/*Style rule for the layout and color*/
+body{
+	background-color:lightgray;
+}
+section{
+	border:2px solid red;
+	width:50%;
+	background-color: #E8DECA;
+	padding:10px;
+	margin: auto;
+}
+h1.style{
+	text-align:center;
+	padding-top:30px;
+	padding-bottom:22px;
+}
+h1{
+	text-align:center;
+	padding-top:1px;
+}
+p{
+	padding-left:146px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+/*Style rules for the images*/
+#image1{
+	padding-left:10px;
+	width:100px;
+	height:90px;
+	float:left;
+}
+#image2{
+	padding-right:10px;
+	width:100px;
+	height:90px;
+	float:right;
+}
+#image3{
+	padding:10px;
+	width:120px;
+	height:110px;
+	float:left;
+}
+#image4{
+	padding:10px;
+	width:120px;
+	height:110px;
+	float:right;
+}
+#image5{
+	padding:10px;
+	width:120px;
+	height:110px;
+	float:left;
+}
+#image6{
+	padding:10px;
+	width:120px;
+	height:110px;
+	float:right;
+}
+#image7{
+	padding:10px;
+	width:120px;
+	height:110px;
+	float:right;
+}
+#image8{
+	padding:10px;
+	width:120px;
+	height:110px;
+	float:left;
+}
+
+/*Style rule to add some space*/
+.space{
+	margin-bottom: 50px;
+}
+
+/*Style rule for the footer*/
+footer{
+	padding: 10px;
+	background-color:lightgray;
+	text-align:center;
+	margin-top:50px;
+}
+/*Style rule for the nav*/
+nav{
+	margin-left:50px;
+}

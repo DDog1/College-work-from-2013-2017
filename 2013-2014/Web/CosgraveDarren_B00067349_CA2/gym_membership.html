@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>gym membership</title>
+	<style> @import "css/gym_membership.css";</style>
+	<style> @import "css/nav.css";</style>
+
+	<!--Start of Javascript-->
+
+	<script type="text/javascript">
+
+	function check(input)
+	{
+		var Password = document.getElementById('Password').value
+		var cPassword = document.getElementById('cPassword').value
+		if (Password != cPassword)
+		{
+			input.setCustomValidity('Password Must be Matching.');
+		}
+		else
+		{
+			// input is valid -- reset the error message
+			input.setCustomValidity('');
+		}
+	}
+
+	function onload()
+	{
+	alert("Hello and thank you, for taking the time to fill this membership from out");
+	alert("Please fill what you can and take your time");
+	}
+
+	function mouseover()
+	{
+	document.getElementById("change").innerHTML = "Please pick what Physical Condition suits you";
+	}
+
+	function mouseout()
+	{
+	document.getElementById("change").innerHTML = " ?";
+	}
+
+
+
+
+
+	function total()
+	{
+		var total=0;
+
+		document.getElementById("slot_2").innerHTML = "Total cost = "+total;
+
+		if(document.getElementById("Health").checked == true)
+		{
+			total=total+10;
+			document.getElementById("slot_2").innerHTML = "Total cost = "+total;
+		}
+
+		if(document.getElementById("Energy").checked == true)
+		{
+			total=total+10;
+			document.getElementById("slot_2").innerHTML = "Total cost = "+total;
+		}
+
+		if(document.getElementById("Fitness").checked == true)
+		{
+			total=total+10;
+			document.getElementById("slot_2").innerHTML = "Total cost = "+total;
+		}
+
+		if(document.getElementById("Toning").checked == true)
+		{
+			total=total+10;
+			document.getElementById("slot_2").innerHTML = "Total cost = "+total;
+		}
+
+		if(document.getElementById("Weigth_1").checked == true)
+		{
+			total=total+10;
+			document.getElementById("slot_2").innerHTML = "Total cost = "+total;
+		}
+
+		if(document.getElementById("Rehab").checked == true)
+		{
+			total=total+10;
+			document.getElementById("slot_2").innerHTML = "Total cost = "+total;
+		}
+
+
+
+
+		if(document.getElementById("None").checked == true)
+		{
+			total=total+10;
+			document.getElementById("slot_2").innerHTML = "Total cost = "+total;
+		}
+
+		if(document.getElementById("Massage").checked == true)
+		{
+			total=total+10;
+			document.getElementById("slot_2").innerHTML = "Total cost = "+total;
+		}
+
+		if(document.getElementById("Training").checked == true)
+		{
+			total=total+10;
+			document.getElementById("slot_2").innerHTML = "Total cost = "+total;
+		}
+
+		if(document.getElementById("Nutrition").checked == true)
+		{
+			total=total+10;
+			document.getElementById("slot_2").innerHTML = "Total cost = "+total;
+		}
+
+		if(document.getElementById("Steam").checked == true)
+		{
+			total=total+10;
+			document.getElementById("slot_2").innerHTML = "Total cost = "+total;
+		}
+
+		if(document.getElementById("Fitness_1").checked == true)
+		{
+			total=total+10;
+			document.getElementById("slot_2").innerHTML = "Total cost = "+total;
+		}
+	}
+
+
+
+
+	function pick(select)
+	{
+	document.getElementById("slot_3").innerHTML="Category = "+select;
+	}
+
+
+
+
+	function myFunction(Pay)
+	{
+	document.getElementById("slot_1").innerHTML="Pay method = "+Pay;
+	}
+
+	</script>
+
+	<!--End of Javascript-->
+
+</head>
+<body onload="onload()">
+
+<!--Start of nav-->
+
+<nav>
+	<ul>
+		<li><a href="home_page.html">Home page</a></li>
+		<li><a href="gym_membership.html" class="current_page">Membership</a></li>
+		<li><a href="classes.html">classes</a></li>
+		<li><a href="gallery.html">Inside Gym</a></li>
+		<li><a href=".html">Contact</a></li>
+		<li><a href="site_map.html">Site Map</a></li>
+	</ul>
+</nav>
+
+<!--End of nav-->
+
+<section id="right">
+
+	<p id="slot_3">Category = None</p>
+	<p id="slot_2">Total cost = 0</p>
+	<p id="slot_1">Pay method = None</p>
+
+</section>
+
+<!--Start of Form-->
+
+<form action="confirmation.html" oninput="x.value=parseInt(a.value)" autocomplete="on">
+
+	<!--Start of header-->
+
+	<header>
+
+		<img src="images/image_1.jpg" id="image1" alt="image 1">
+
+		<img src="images/image_2.jpg" id="image2" alt="image 2">
+
+		<h1>TOTAL FITNESS</h1>
+
+	</header>
+
+	<!--End of header-->
+
+	<p id="move">Complete this form and press the Send button          <span>*Indicates a required field</span></p>
+
+	<!--Fieldset for input-->
+
+	<fieldset>
+		<legend>Personal Details</legend>
+		<div id="style">
+
+			<!--Start of section-->
+
+			<section>
+				<label for="Name">Name:</label>
+				<input type="text" name="Name" required placeholder="Enter name" id="Name" autofocus=""><span>*</span><br>
+
+				<label for="Phone">Phone number:</label>
+				<input type="tel" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" title="Phone Number (Format: +99(99)9999-9999)" id="Phone" required><span>*</span><br>
+
+				<label for="Date">Date of Birth:</label>
+				<input type="date" name="Date" id="Date" required><span>*</span><br>
+
+				<label for="Password">Password:</label>
+				<input type="password" maxlength="20" name="password" id="Password" required><span>*</span>
+			</section>
+
+			<!--End of section-->
+
+			<!--Start of section-->
+
+			<section>
+				<label for="Address">Address:</label>
+				<input type="text" name="Address" required placeholder="Enter address" id="Address"><span>*</span><br>
+
+				<label for="Email">Email:</label>
+				<input type="email" name="Email" required id="Email" autocomplete="off"><span>*</span><br>
+
+				<label for="Gender">Gender:</label>
+				<input type="radio" name="Gender" value="Male" required>Male <input type="radio" name="Gender" value="Female" required id="Gender">Female<span> *</span><br>
+
+				<label for="Password">Reenter Password:</label>
+				<input type="password" maxlength="20" name="password" required id="cPassword" oninput="check(this)"><span>*</span>
+			</section>
+
+			<!--End of section-->
+
+		</div>
+	</fieldset>
+
+	<!--Fieldset for condition-->
+
+	<fieldset>
+
+		<legend>Health / Physical Condition</legend>
+
+		<select name="Options" size="1">
+			<optgroup label="--SELECT--">
+				<option value="Unfit">Unfit</option>
+				<option value="Fit" selected="">Fit</option>
+				<option value="Healthy">Healthy</option>
+				<option value="Unwell">Unwell</option>
+				<option value="Overweight">Overweight</option>
+			</optgroup>
+		</select><span id="change" onmouseover="mouseover()" onmouseout="mouseout()"> ?</span>
+
+		<br>
+
+		<label>weight:</label>
+		<input type="range" name="a" min="8" max="20" step="2" id="Weigth">
+		<output name="x"></output>
+
+	</fieldset>
+
+	<!--Fieldset for membership-->
+
+	<fieldset>
+
+		<legend>Membership</legend>
+
+		<label>Category</label>
+				<input type="radio" name="Category" id="Student" value="Student" onclick="pick(this.value)" required>Student
+				<input type="radio" name="Category" id="Adult" value="Adult" class="adult" onclick="pick(this.value)" required>Adult
+				<input type="radio" name="Category" id="Senior" value="Senior" class="senior" onclick="pick(this.value)" required>Senior
+				<input type="radio" name="Category" id="Off" value="Off-peak" class="off" onclick="pick(this.value)" required>Off-peak
+
+		<br>
+
+		<label>Term</label>
+
+			<input type="radio" name="Term" value="3 months" required>3 months
+			<input type="radio" name="Term" value="6 months" required>6 months
+			<input type="radio" name="Term" value="9 months" required>9 months
+			<input type="radio" name="Term" value="12 months" required>12 months
+
+	</fieldset>
+
+	<!--Fieldset for aims-->
+
+	<fieldset>
+
+		<legend>Exercise Aims</legend>
+		<input type="checkbox" id="Health" name="Health" value="Health" class="Health" onclick="total()">Health
+		<input type="checkbox" id="Energy" name="Energy" value="Energy" class="Energy" onclick="total()">Energy
+		<input type="checkbox" id="Fitness" name="Fitness" value="Fitness" class="Fitness" onclick="total()">Fitness
+
+		<br>
+
+		<input type="checkbox" id="Toning" name="Toning" value="Toning" class="Toning" onclick="total()">Toning
+		<input type="checkbox" id="Weigth_1" name="Weigth Loss" value="Weigth Loss" class="Weigth" onclick="total()">Weigth Loss
+		<input type="checkbox" id="Rehab" name="Rehab" value="Rehab" class="Rehab" onclick="total()">Rehab
+
+	</fieldset>
+
+	<!--Fieldset for pay method-->
+
+	<fieldset>
+
+		<legend>PAYMENT METHOD</legend>
+		<input type="radio" name="Pay" value="Visa" class="visa" onclick="myFunction(this.value)" required><img src="images/visa.jpg" id="visa" alt="visa">
+		<input type="radio" name="Pay" value="MasterCard" onclick="myFunction(this.value)" required><img src="images/master_card.jpg" id="master" alt="master card">
+		<input type="radio" name="Pay" value="PayPal" onclick="myFunction(this.value)" required><img src="images/paypal_logo.jpeg" id="paypal" alt="paypal">
+
+	</fieldset>
+
+	<!--Fieldset for services-->
+
+	<fieldset>
+
+		<legend>Are you interestes in other services?</legend>
+
+		<input type="checkbox" id="None" name="None" value="None" class="None" onclick="total()">None
+		<input type="checkbox" id="Massage" name="Massage" value="Massage" class="Massage" onclick="total()">Massage
+		<input type="checkbox" id="Training" name="Personal Training" value="Personal Training" class="Personal" onclick="total()">Personal Training
+		<br>
+		<input type="checkbox" id="Nutrition" name="Nutrition" value="Nutrition" class="Nutrition" onclick="total()">Nutrition
+		<input type="checkbox" id="Steam" name="Steam Room" value="Steam Room" class="Steam" onclick="total()">Steam Room
+		<input type="checkbox" id="Fitness_1" name="Fitness Classes" value="Fitness Classes" class="Fitness_class" onclick="total()">Fitness Classes
+
+	</fieldset>
+
+	<!--Fieldset for other text-->
+
+	<fieldset>
+
+		<legend>Other details</legend>
+
+		<textarea name="comments"></textarea>
+
+	</fieldset>
+
+	<!--Fieldset with an uplode-->
+
+	<fieldset>
+
+		<legend>Uplode a photo of yourself</legend>
+		<input type="file" name="file" id="file">
+
+	</fieldset>
+
+	<!--Buttons-->
+
+	<div id="buttons">
+		<input type="submit" name="submit" value="Send">
+		<input type="reset" name="reset" value="Clear">
+	</div>
+
+</form>
+
+<!--End of Form-->
+</body>
+</html>

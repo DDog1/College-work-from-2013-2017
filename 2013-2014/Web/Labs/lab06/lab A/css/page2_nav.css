@@ -1,0 +1,28 @@
+nav {
+    background-color: pink;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+    padding-bottom: 0.5em;
+}
+
+nav a:hover {
+    background-color: green;
+    color: blue;
+}
+
+nav .current_page {
+    background-color: darkgray;
+}

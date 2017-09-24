@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Display Booking</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <h:outputStylesheet library="css" name="login.css"/>
+        <h:outputStylesheet library="css" name="animate.css"/>
+    </h:head>
+    <body onload="#{bookingController.display()}" class="animated fadeInLeft">
+        <c:if test="#{customerController.login==true}">
+            <center>
+                <h1>Booking Display</h1>
+                <h:dataTable value="#{bookingController.items}" var="items" border="0" cellpadding="2" cellspacing="0" rules="all" style="border:solid 1px">
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="ID"/>
+                        </f:facet>
+                        <h:outputText value="#{items.bookingId}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Date Day"/>
+                        </f:facet>
+                        <h:outputText value="#{items.dateDay}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Time"/>
+                        </f:facet>
+                        <h:outputText value="#{items.timeDay}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Customer Info"/>
+                        </f:facet>
+                        <h:outputText value="#{items.customerFk}"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">
+                            <h:outputText value="Package Info"/>
+                        </f:facet>
+                        <h:outputText value="#{items.packageFk}"/>
+                    </h:column>
+                </h:dataTable>
+                <h:link outcome="bookingHome" value="Package Options"/>
+            </center>
+        </c:if>
+        <c:if test="#{customerController.login==false}">
+            <center>
+                <span>Nice try hacker!! :P</span><br/>
+                <h:link outcome="/index" value="Back to login"/>
+            </center>
+        </c:if>
+    </body>
+</html>

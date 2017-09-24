@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form id="studentForm">
+            <h:panelGrid columns="3" columnClasses="rightalign,leftalign,leftalign">
+                 <h:outputLabel value="Course" for="course" />
+                <h:selectOneMenu id="course" label="Course">
+                    <f:selectItem itemLabel="" itemValue=""/>
+                    <f:selectItem itemLabel="Computing" itemValue="Comp"/>
+                    <f:selectItem itemLabel="Digital Media" itemValue="DigM"/>
+                    <f:selectItem itemLabel="Engineering" itemValue="Eng"/>
+                </h:selectOneMenu>
+                <h:message for="course"/>
+                
+                <h:outputLabel value="First Name" for="firstName"/>
+                <h:inputText id="firstName" label="First Name" required="true" />
+                <h:message for="firstName" />
+
+               <h:outputLabel value="Last Name" for="lastName"/>
+                <h:inputText id="lastName" label="Last Name" required="true" />
+                <h:message for="lastName" />
+                    
+                <h:outputLabel value="Age" for="age"/>
+               <h:inputText id="age" label="Age" size="2"/>
+              <h:message for="age" />
+                
+                <h:outputLabel value="Email" for="email"/>
+                <h:inputText id="email" label="Email" required="true" />
+               <h:message for="email" />
+                
+                <h:panelGroup/>  <!--create an empty cell-->
+                <h:commandButton id="register" value="Register" action="confirmation"/> <!--static navigation, use name of page without xhtml extension-->
+               </h:panelGrid>
+</h:form>
+
+    </h:body>
+</html>
+

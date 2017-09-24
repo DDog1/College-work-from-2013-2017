@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Feedback Form</title>
+	<style> @import "survey.css";</style>
+</head>
+<body>
+
+<!--Start of the from-->
+
+<form>
+
+	<h1>Food Survey</h1>
+	<span>Please complete the following form:</span>
+
+	<!--Start of the fieldset-->
+
+	<fieldset>
+
+		<legend>Personal Details</legend>
+
+		<label for="Username">Username</label>
+		<input type="text" name="username" id="Username" autofocus>
+		<br>
+
+		<label for="Age">Age</label>
+		<input type="number" name="a" min="1" max="10" id="Age" required>
+		<br>
+
+		<label for="Phone">Phone</label>
+		<input type="tel" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" title="Phone Number (Format: +99(99)9999-9999)" id="Phone" required>
+		<br>
+
+		<label for="Password">Password</label>
+		<input type="password" size"20" maxlength="20" name="password" id="Password">
+
+	</fieldset>
+
+	<!--End of the fieldset-->
+
+	<!--Start of the fieldset-->
+
+	<fieldset>
+		<legend>Food groups</legend>
+
+		<input type="checkbox" name="fat" value="fat">Fats, oils and sugar
+		<br>
+		<input type="checkbox" name="dairy" value="dairy">Dairy
+		<br>
+		<input type="checkbox" name="meat" value="meat">Meat, poultry, fish or nuts
+		<br>
+		<input type="checkbox" name="veg" value="veg">Veg
+		<br>
+		<input type="checkbox" name="fruit" value="fruit">Fruit
+		<br>
+		<input type="checkbox" name="mix" value="mix">Bread, cereal, rice or pasta
+
+	</fieldset>
+
+	<!--End of the fieldset-->
+
+	<!--Start of the fieldset-->
+
+	<fieldset>
+		<legend>Water drank each day</legend>
+
+		<!--Start of the option-->
+
+		<select name="Options" size = "1">
+				<option value="glasses"selected>up to 1 glass</option>
+				<option value="glasses">2-4 glasses</option>
+				<option value="glasses">5-8 glasses</option>
+				<option value="glasses">>8 glasses</option>
+		</select>
+
+		<!--End of the option-->
+	</fieldset>
+
+	<!--End of the fieldset-->
+
+	<!--Start of the div-->
+
+	<div id="buttons">
+		<input type="submit" name="submit" value="Send">
+		<input type="reset" name="reset" value="Clear">
+	</div>
+
+	<!--End of the div-->
+
+</form>
+
+<!--End of the from-->
+
+</body>
+</html>

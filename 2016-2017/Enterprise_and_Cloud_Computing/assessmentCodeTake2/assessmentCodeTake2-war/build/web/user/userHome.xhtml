@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>User Options</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <h:outputStylesheet library="css" name="login.css"/>
+        <h:outputStylesheet library="css" name="animate.css"/>
+    </h:head>
+    <body>
+        <c:if test="#{customerController.login==true}">
+            <center class="animated fadeInLeft">
+                <h1>User Options</h1>
+                <h:link outcome="display" value="Display user data"/><br/>
+                <h:link outcome="update" value="Update user data"/><br/>
+                <h:link outcome="remove" value="Delete user"/><br/>
+                <c:if test="#{customerController.customers.role=='Admin'}">
+                    <h:link outcome="adminAdd" value="Admin Add"/><br/>
+                </c:if>
+                <h:link outcome="/home" value="Home Page"/>
+            </center>
+        </c:if>
+        <c:if test="#{customerController.login==false}">
+            <center>
+                <span>Nice try hacker!! :P</span><br/>
+                <h:link outcome="/index" value="Back to login"/>
+            </center>
+        </c:if>
+    </body>
+</html>

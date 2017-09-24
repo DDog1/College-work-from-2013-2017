@@ -1,0 +1,31 @@
+h1{
+	color : red;
+	padding : 1px;
+}
+
+img{
+	width:250px;
+	height:350px;
+	margin-left: 12px;
+	border: 2px solid red;
+}
+
+p{
+	font-size : 1em;
+	font-family : sans-serif;
+	color : red;
+	padding : 1px;
+}
+
+body{
+	background:url('../images/ironman-3-wallpaper.jpg') no-repeat top #fff; 
+	background-size: 100%;
+}
+
+ul{
+	list-style-type : none,
+}
+
+footer{
+	padding : 1px;
+}

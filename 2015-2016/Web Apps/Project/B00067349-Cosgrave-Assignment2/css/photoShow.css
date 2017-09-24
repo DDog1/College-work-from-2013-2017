@@ -1,0 +1,22 @@
+#photoShow {
+    height:400px;
+    width:800px;
+    margin:auto;
+}
+
+#photoShow div {
+    position:absolute;
+    z-index: 0;
+    border: 2px solid #FF00F7;
+}
+#photoShow div.previous {
+    z-index: 1;
+}
+
+#photoShow div.current {
+    z-index: 2;
+}
+#img_roll {
+    height:400px;
+    width:800px;
+}

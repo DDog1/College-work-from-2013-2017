@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:skiHoliday xmlns:p="http://www.example.org/skiHolidaySchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/skiHolidaySchema skiHolidaySchema.xsd ">
+	<p:person>
+		<p:personal>
+			<p:name>Darren Cosgrave</p:name>
+			<p:address>Dublin</p:address>
+			<p:DOB>10/10/1994</p:DOB>
+			<p:sex>Male</p:sex>
+			<p:phone>0123456789</p:phone>
+			<p:NOK>Mother</p:NOK>
+		</p:personal>
+		<p:holiday>
+			<p:type>Winter Skiing</p:type>
+			<p:date>2017-01-24</p:date>
+			<p:duration>2 Weeks</p:duration>
+		</p:holiday>
+	</p:person>
+	
+	<p:person>
+		<p:personal>
+			<p:name>Ryan Cosgrave</p:name>
+			<p:address>Dublin</p:address>
+			<p:DOB>01/01/2000</p:DOB>
+			<p:sex>Male</p:sex>
+			<p:phone>0123456789</p:phone>
+			<p:NOK>Father</p:NOK>
+		</p:personal>
+		<p:holiday>
+			<p:type>Winter Skiing</p:type>
+			<p:date>2017-01-24</p:date>
+			<p:duration>2 Weeks</p:duration>
+		</p:holiday>
+	</p:person>
+</p:skiHoliday>

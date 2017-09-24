@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Register</title>
+        <h:outputStylesheet library="css" name='register.css'/>
+        <h:outputStylesheet library="css" name="animate.css"/>
+    </h:head>
+    <h:body>
+        <h:form id="login">
+            <h1 class="animated fadeInDownBig">Register</h1>
+            <span style="color: red" class="animated fadeInLeft">#{customerController.message}</span>
+            <section id='left' class="animated fadeInLeft">
+                <div>
+                    <h:outputLabel value="Firstname" for="firstname"/><br/>
+                    <h:inputText id="fristname" label="Firstname" required="true" value="#{customerController.customers.firstname}"/><br/>
+                </div>
+                <div>
+                    <h:outputLabel value="Lastname" for="lastname"/><br/>
+                    <h:inputText id="lastname" label="Lastname" required="true" value="#{customerController.customers.lastname}"/><br/>
+                </div>
+                <div>
+                    <h:outputLabel value="Phone" for="phone"/><br/>
+                    <h:inputText id="phone" label="Phone" required="true" value="#{customerController.customers.phone}"/><br/>
+                </div>
+                <div>
+                    <h:outputLabel value="Email" for="email"/><br/>
+                    <h:inputText id="email" label="Email" required="true" value="#{customerController.customers.email}"/><br/>
+                </div>
+                <div>
+                    <h:outputLabel value="Address1" for="address1"/><br/>
+                    <h:inputText id="address1" label="Address1" required="true" value="#{customerController.customers.address1}"/><br/>
+                </div>
+                <div>
+                    <h:outputLabel value="Address2" for="address2"/><br/>
+                    <h:inputText id="address2" label="Address2" required="true" value="#{customerController.customers.address2}"/><br/>
+                </div>
+            </section>
+            <section id='right' class="animated fadeInRight">
+                <div>
+                    <h:outputLabel value="City" for="city"/><br/>
+                    <h:inputText id="city" label="City" required="true" value="#{customerController.customers.city}"/><br/>
+                </div>
+                <div>
+                    <h:outputLabel value="State" for="state"/><br/>
+                    <h:inputText id="state" label="State" required="true" value="#{customerController.customers.state}"/><br/>
+                </div>            
+                <div>
+                    <h:outputLabel value="Username" for="username"/><br/>
+                    <h:inputText id="username" label="Username" required="true" value="#{customerController.customers.username}"/><br/>
+                </div>
+                <div>
+                    <h:outputLabel value="Password" for="password"/><br/>
+                    <h:inputSecret id="password" label="Password" required="true" value="#{customerController.customers.password}">
+                        <f:validator validatorId="passwordValidator"/>
+                        <f:attribute name="confirmPassword" value="#{confirmPassword}" />
+                    </h:inputSecret><br/>
+                </div>
+                <div>
+                    <h:outputLabel for="confirmPassword" value="Confirm password : " /><br/>
+                    <h:inputSecret id="confirmPassword" required="true"
+                    binding="#{confirmPassword}"
+                    requiredMessage="Please enter confirm password" /><br/>
+                </div>   
+            </section>
+            <h:panelGroup/>
+            <div class="animated fadeInUpBig">
+                <div id='space'>
+                    <h:commandButton id="register" value="Register" action="#{customerController.add()}"/>
+                    <h:commandButton id="reset" value="reset" type="reset"/>
+                </div>
+                <br />
+                <h:link outcome="/index" value="Login"/>
+            </div>
+        </h:form>
+        <div>
+            <center>
+                <h:message for="username" style="color: red;" /><br />
+                <h:message for="password" style="color: red;" /><br />
+                <h:message for="confirmPassword" style="color: red;" /><br />
+                <h:message for="fristname" style="color: red;" /><br />
+                <h:message for="lastname" style="color: red;" /><br />
+                <h:message for="phone" style="color: red;" /><br />
+                <h:message for="email" style="color: red;" /><br />
+                <h:message for="address1" style="color: red;" /><br />
+                <h:message for="address2" style="color: red;" /><br />
+                <h:message for="city" style="color: red;" /><br />
+                <h:message for="state" style="color: red;" /><br />
+            </center>
+        </div>
+    </h:body>
+</html>

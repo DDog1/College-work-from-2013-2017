@@ -1,0 +1,34 @@
+/*Used to change the color of the newsletter help text*/
+
+span{
+	font-size:small;
+	color:red;
+}
+
+/*A div id used for the buttons, submit and reset*/
+
+#buttons{
+	margin-left:65px;
+	margin-top:10px
+}
+
+/*Style rules used for the form*/
+
+form{
+	margin-right:50em;
+	padding:10px;
+	border:2px solid red;
+	background-color:LightGray;
+}
+
+/*Style rules used for the fieldset*/
+
+fieldset{
+	border:2px solid blue;
+}
+
+/*Style rule used for the legend*/
+
+legend{
+	color:blue;
+}

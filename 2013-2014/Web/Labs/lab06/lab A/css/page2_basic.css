@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    padding: 1em;
+    background-color: darkslategrey;
+    color: navajowhite;
+    text-align: center;
+    text-decoration: none;
+}
+
+aside dt {
+    font-weight: bold;
+}
+
+aside dd {
+    padding-bottom: 1em;
+}
+
+
+aside {
+    background-color: yellow;
+}

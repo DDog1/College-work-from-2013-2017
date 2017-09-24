@@ -1,0 +1,83 @@
+/*Style rules for the layout of the form and color*/
+form{
+	border:2px solid #FF00F7;
+	width:50%;
+	background-color: white;
+	padding:10px;
+	margin: auto;
+	margin-bottom: 10px;
+}
+select{
+	background:#BA0BDA;
+	color:white;
+	font-weight: bold;
+}
+
+textarea{
+	font-weight: bold;
+	width:350px;
+	hight:75px;
+	max-width: 80%;
+	color:white;
+}
+
+h1,h2{
+	text-align:center;
+	padding-top:1px;
+	color:#FF00F7;
+}
+
+span{
+	color:red;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+/*Style rule for the buttons*/
+#buttons input[type="submit"], input[type="reset"]{
+	margin-top:10px;
+	font-weight: bold;
+	background:#BA0BDA;
+	border: none;
+ 	padding-left: 10%;
+ 	padding-right:10%;
+ 	border-radius: 2px;
+  	cursor: pointer;
+  	color:white;
+}
+#buttons{
+	padding-left:30%;
+}
+
+/*Style rules for labels and input types*/
+label{
+	font-weight: bold;
+	color:#FF00EB;
+}
+
+label, input[type="eMail"],input[type="fullName"],input[type="contactNumber"],input[type="date"]{
+	float:left;
+	display:block;	
+	width: 114px;
+	font-weight: bold;
+	font-style:oblique;
+	font-family:cursive;
+}
+input[type="eMail"],input[type="fullName"],input[type="contactNumber"],input[type="date"]{
+	width: 140px;
+}
+br{
+clear:left;
+}
+
+#style input, textarea,input[type="eMail"],input[type="fullName"],input[type="contactNumber"],input[type="date"]{
+	background-color: #BA0BDA;
+	border: 0.1em solid #999999;
+	margin-top:0px;
+	color:white;
+}
+textarea{
+	font-weight: bold;
+	font-style:oblique;
+	font-family:cursive;
+}
